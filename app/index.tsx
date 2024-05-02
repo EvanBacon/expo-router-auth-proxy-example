@@ -1,12 +1,8 @@
 import * as React from "react";
-import * as WebBrowser from "expo-web-browser";
+
 import { useAuthRequest, TokenResponse } from "expo-auth-session";
 import { Button, Platform, Text, View } from "react-native";
 import Constants, { ExecutionEnvironment } from "expo-constants";
-
-/* @info <strong>Web only:</strong> This method should be invoked on the page that the auth popup gets redirected to on web, it'll ensure that authentication is completed properly. On native this does nothing. */
-WebBrowser.maybeCompleteAuthSession();
-/* @end */
 
 // Endpoint
 const discovery = {
